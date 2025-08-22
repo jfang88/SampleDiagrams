@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     Client["Client"]
     ServiceFQDN["Service / FQDN"]
@@ -30,3 +31,4 @@ graph TD
     FW --> WAF2
     FW --> WAF3
     FW --> WAF4
+```
