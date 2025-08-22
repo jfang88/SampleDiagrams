@@ -38,8 +38,13 @@ graph TD
 
     WAF1 --> VPC1
     WAF2 --> VPC2
+    WAF2 --> VPC1
+
     WAF3 --> VPC3
+    WAF3 --> VPC1
+
     WAF4 --> VPC4
+    WAF4 --> VPC1
 
 
 ```
