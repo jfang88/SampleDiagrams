@@ -19,6 +19,7 @@ graph TD
 
     Client --> ServiceFQDN
     ServiceFQDN --> GTM
+    Client --> GTM
     GTM --> VIP1
     GTM --> VIP2
     GTM --> VIP3
