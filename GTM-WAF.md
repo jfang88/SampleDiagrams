@@ -17,6 +17,10 @@ graph TD
     WAF3["OCASS WAFs"]
     WAF4["HKATS WAFs"]
 
+    VPC1["OCP Services"]
+    VPC2["OCCASS services"]
+    VPC3["HKATS Services"]
+
     Client --> ServiceFQDN
     ServiceFQDN --> GTM
     GTM --> Client
