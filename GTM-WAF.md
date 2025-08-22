@@ -36,9 +36,10 @@ graph TD
     VIP3 --> WAF3
     VIP4 --> WAF4
 
-    WAF1 -> VPC1
-    WAF2 -> VPC2
-    WAF3 -> VPC3
-    WAF4 -> VPC4
+    WAF1 --> VPC1
+    WAF2 --> VPC2
+    WAF3 --> VPC3
+    WAF4 --> VPC4
+
 
 ```
