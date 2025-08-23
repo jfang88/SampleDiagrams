@@ -2,20 +2,23 @@
 
 sequenceDiagram
 
-    actor Client
-    participant Server
-    participant Database
+    autonumber
+    participant DB as Database
+    participant S as Server
+    participant C as Client
 
-    Client ->> Server: Login (Username, Password)
-
-    activate Server
-    Server ->> Database: Select User Info
-    note over Database: Password is not stored
-
-    Database -->> Server: Salt & Hash
-    deactivate Database
-
-    Server -->> Client: 200 OK & JWT
+    C->>+S: Login (Username, Password)
+    S->>+DB: Select User Info
+    note over DB: Password is not stored in database
+    DB-->>-S: Salt & Hash
+    S->>S: Check Computed Hash using Salt
+    alt Computed Hash Matches
+        S->>S: Generate JWT
+        S-->>C: 200 OK & JWT
+    else No user or wrong password
+        S-->>C: 401 Unauthorized
+    end
+    deactivate S
 
 
 ```
