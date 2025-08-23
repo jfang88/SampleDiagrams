@@ -3,10 +3,11 @@
 sequenceDiagram
 
     autonumber
-    participant DB as Database
-    participant S as Server
-    participant C as Client
 
+    participant C as Client
+    participant S as Server
+    participant DB as Database
+    
     C->>+S: Login (Username, Password)
     S->>+DB: Select User Info
     note over DB: Password is not stored in database
