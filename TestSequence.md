@@ -1,5 +1,6 @@
 ```mermaid
 sequenceDiagram
+
     actor Client
     participant Server
     participant Database
