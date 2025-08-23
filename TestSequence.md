@@ -8,7 +8,7 @@ sequenceDiagram
 
     Client ->> Server: Login (Username, Password)
     activate Server
-    Server -> >Database: Select User Info
+    Server ->> Database: Select User Info
     note over Database: Password is not stored
     Database -->> Server: Salt & Hash
     deactivate Database
