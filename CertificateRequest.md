@@ -1,4 +1,4 @@
-~~~
+```mermaid
 
 sequenceDiagram
     participant Developer
@@ -42,4 +42,4 @@ sequenceDiagram
     Developer->>TargetSystem: Copy CRT to target system
     Developer->>TargetSystem: Install CRT on production system
 
-~~~
+```
