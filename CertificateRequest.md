@@ -1,7 +1,4 @@
 ~~~
-Mermaid
-
-
 
 sequenceDiagram
     participant Developer
